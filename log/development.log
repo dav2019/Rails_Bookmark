@@ -213,3 +213,16 @@ Processing by BooksController#show as HTML
 Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.1ms | Allocations: 3971)
 
 
+Started GET "/" for 127.0.0.1 at 2022-04-15 12:24:43 +1000
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:1
+  Rendered books/index.html.erb within layouts/application (Duration: 10.1ms | Allocations: 8009)
+  Rendered layout layouts/application.html.erb (Duration: 64.5ms | Allocations: 42469)
+Completed 200 OK in 85ms (Views: 67.1ms | ActiveRecord: 0.5ms | Allocations: 50863)
+
+
